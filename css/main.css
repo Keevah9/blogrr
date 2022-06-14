@@ -45,20 +45,19 @@ p{
 button{
     background-color: whitesmoke;
     color: hsl(356, 100%, 66%);
-    padding: 5px;
-    margin: 0.5rem;
+    padding: 7px;
+    margin: 1rem 0.5rem;
     border-radius: 15px;
     border: none;
+}
+.sign {
+    padding: 5px 9px;
+    margin-left: 1.2rem;
 }
 .btn{
     color: whitesmoke;
     background-color: transparent;
     border: 1px solid rgb(192, 189, 189);
-}
-.sign{
-    border-radius: 15px;
-    padding: 5px 8px;
-    margin-left: 1.2rem;
 }
 .mainBg{
     background-size: 100% 150%;
@@ -126,16 +125,24 @@ main{
     background-image: url('../images/bg-pattern-intro-desktop.svg');
     background-size: 100% 100%;
 }
-
+/* .mobileNav{
+    max-width: 480px;
+    margin: auto;
+    background-color: whitesmoke;
+    height: 200px;
+    color: black;
+} */
 /*main section*/
-
+.open{
+    display: block;
+}
 .mainSection{
     padding-top: 8rem;
     min-height: 55%;
-    padding-left: 6rem;
     position: relative;
 }
 .mainContainer{
+    padding-left: 6rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -185,13 +192,14 @@ main{
     min-width: 50%;
 }
 .subContent{
-    width: 40%;
+    width: 47%;
     text-align: left;
     margin-right: 3rem;
 }
 .subContent h3{
     text-align: left;
-    color: hsl(0, 0%, 100%)
+    color: hsl(0, 0%, 100%);
+    font-size: 2.2rem;
 }
 .subContent p{
     color: hsl(0, 0%, 100%);
@@ -256,23 +264,23 @@ span{
     display: none;
 }
 
-
 /* media queries */
 
 /* mobile screen */
-@media all and (max-width:760px){
+@media all and (max-width:768px){
     h3{
         font-size: 2rem;
+        text-align: center;
     }
     h2{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     nav{
         display: none;
     }
     header{
-        padding: 0 2rem;
+        padding: 0 4rem 0 2rem;
     }
     .menu{
         display: block;
@@ -281,16 +289,24 @@ span{
     .mainBg{
         padding: 3rem;
     }
-    .mainSection{
-        padding: 3rem;
+    main{
+        background: url("../images/bg-pattern-intro-mobile.svg");
+        background-size: 100% 100%;
     }
     .mainContainer{
         display: flex;
         flex-direction: column-reverse;
         padding: 0;
+        justify-content: center;
+    }
+    .mainSection{
+        padding: 4rem 3rem;
+    }
+    .mainSection h3{
+        padding-bottom: 3rem;
     }
     .content{
-        min-width: 100%;
+        min-width: 90%;
         text-align: center;
         margin-top: -4rem;
     }
@@ -298,16 +314,16 @@ span{
         font-size: 1.6rem;
     }
     .mainSection p, .lastContent p{
-        font-size: 1.5rem
+        font-size: 1.5rem;
+        line-height: 2.5rem;
     }
     .mainSection img{
         position: relative;
-        right: 0;
+        right: 5%;
         height: 34vh;
         margin-top: 7rem;
-        width: 100%;
+        max-width: 90%;
     }
-
     .container{
         display: flex;
         flex-direction: column;
@@ -319,7 +335,7 @@ span{
         position: relative;
     }
     .imgCon{
-        margin-top: -18rem;
+        margin-top: -15rem;
     }
     .subContent{
         min-width: 80%;
@@ -328,33 +344,38 @@ span{
     }
     .subContent h3{
         text-align: center;
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
     .lastSection{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 0 3rem;
     }
     .lastSection img{
         position: relative;
-        left: 0;
+        left: 5%;
         top: 0;
         height: 34vh;
-        width: 100%;
+        max-width: 90%;
     }        
     .lastContent{
-        min-width: 100%;
+        min-width: 95%;
         text-align: center;
     }
     footer{
-        min-height: 65vh;
-        padding: 2rem;
-        margin-top: 4rem;
+        min-height: 54vh;
+        margin-top: 6rem;
+    }
+    footer .logo{
+        padding-left: 5%;
     }
     .footerContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-align: center;
     }
     footer h5{
@@ -375,6 +396,7 @@ span{
     }
     nav{
         min-width: 98vw;
+        border: 2px solid red;
     }
     .mainSection {
         padding-left: 1.5rem;
@@ -418,7 +440,7 @@ span{
     .mainBg{
         padding: 3rem 12rem;
     } 
-    .mainSection{
+    .mainContainer{
         padding-left: 12rem;
     }
     .container{
@@ -427,9 +449,13 @@ span{
     .lastSection{
         padding-right: 12rem;
     }
-    body{
-        border: 2px solid blue;
-    }
+        .mainSection h3 {
+            padding-left: 0;
+            font-size: 3.5rem;
+        }
+        .subContent{
+            width: 48%;
+        }
 } 
 
 @media (min-width:1440px){
@@ -439,14 +465,14 @@ span{
     .mainBg {
         padding: 3rem 22rem;
     }
-    .mainSection {
+    .mainContainer {
         padding-left: 22rem;
     }
     .content{
         max-width: 40%;
     }
     .container {
-        padding: 0 22rem;
+        padding: 0 19rem;
     }
     .lastSection {
         padding-right: 22rem;
@@ -462,7 +488,13 @@ span{
     .lastContent p{
         font-size: 1.6rem;
     }
+    .subContent {
+        width: 45%;
+    }
     footer{
         margin-top: 3rem;
+    }
+    footer .logo {
+        padding-left: -10%;
     }
 }
