@@ -99,7 +99,6 @@ header {
 .dropDown {
     float: left;
     overflow: hidden;
-    border: 2px solid blue;
 }
 
 .dropDown .dropBtn {
