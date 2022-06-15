@@ -1,11 +1,10 @@
 let menuBtn = document.querySelector('.menu')
-let nav = document.querySelector('nav')
 
-menuBtn.addEventListener('click', function(menu){
-    let navBar = nav
-    if( window.matchMedia('screen and (max-width:768px)'.matches)  && (navBar.style.display === 'block') ){
-        navBar.style.display = 'none'
+menuBtn.addEventListener('click', () =>{
+    let navMenu = document.getElementById('nav')
+    if(navMenu.className === 'navList'){
+        navMenu.className += 'responsive'
     }else{
-        navBar.style.display = 'block'
+        navMenu.className = 'navList'
     }
 })

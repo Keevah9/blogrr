@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <title>Blogr</title>
 </head>
+
 <body>
 
   <!-- intro page-->
@@ -15,49 +17,49 @@
   <div class="mainBg">
 
     <!-- header -->
-     
+
     <header>
       <h4 class="logo">Blogr</h4>
-      <nav>
-        <ul>
-          <li>
-            <select name="product" id="product">
-              <option value="product">Product</option>
-              <option value="product">Overview</option>
-              <option value="product">Pricing</option>
-              <option value="product">Marketplace</option>
-              <option value="product">Features</option>
-              <option value="product">Integrations</option>
-            </select>
-          </li>
-          <li>
-            <select name="company" id="company">
-              <option value="product">Company</option>
-              <option value="product">About</option>
-              <option value="product">Team</option>
-              <option value="product">Blog</option>
-              <option value="product">Careers</option>
-            </select>
-          </li>
-          <li>
-            <select name="connect" id="connect">
-              <option value="product">Connect</option>
-              <option value="product">Contact</option>
-              <option value="product">Newsletter</option>
-              <option value="product">LinkedIn</option>
-            </select>
-          </li>
-        </ul>
-        <ul class="login">
-          <li>Login</li>
-          <li><button class="sign">Sign Up</button> </li>
-        </ul> 
+      <nav class="navList" id="nav">
+        <div class="navBar">
+          <div class="dropDown">
+            <button class="dropBtn">Product <img src="./images/icon-arrow-light.svg" alt=""></button>
+            <div class="subNavList">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button class="dropBtn">Company <img src="./images/icon-arrow-light.svg" alt=""></button>
+            <div class="subNavList">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+          <div class="dropDown">
+            <button class="dropBtn">Connect <img src="./images/icon-arrow-light.svg" alt=""></button>
+            <div class="subNavList">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="login">
+          <h4>Login</h4>
+          <button class="sign">Sign Up</button>
+        </div>
       </nav>
       <img class="menu" src="./images/icon-hamburger.svg" alt="">
     </header>
-    
+
     <!-- main -->
-    
+
     <main>
       <h2>A modern publishing platform</h2>
       <h4>Grow your audience and build your online brand
@@ -68,7 +70,7 @@
       </div>
     </main>
   </div>
-  
+
   <!-- main section -->
 
   <section class="mainSection">
@@ -80,9 +82,12 @@
             Introducing an extensible editor
           </h4>
           <p>
-            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating
+            content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as
+            images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add
+            functionality or
             change the looks of a blog.
           </p>
         </div>
@@ -91,13 +96,15 @@
             Robust content management
           </h4>
           <p>
-            Flexible content management enables users to easily move through posts. Increase the usability of your blog
-            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            Flexible content management enables users to easily move through posts. Increase the usability
+            of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in
+            full control.
           </p>
         </div>
       </div>
-        <img src="./images/illustration-editor-desktop.svg" alt="main image">
-      
+      <img src="./images/illustration-editor-desktop.svg" alt="main image">
+
     </div>
   </section>
 
@@ -109,12 +116,14 @@
     </div>
     <div class="subContent">
       <h3>State of the Art Infrastructure</h3>
-      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+        connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site
+        competitive.</p>
     </div>
-    
+
   </section>
-  
+
   <!-- third section -->
 
   <section class="lastSection">
@@ -124,14 +133,18 @@
     <div class="lastContent">
       <div class="lastContentOne">
         <h4>Free, open, simple</h4>
-        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports
-        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        <p>Blogr is a free and open source application backed by a large community of helpful developers. It
+          supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party
+          commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+          learn.</p>
       </div>
       <div class="lastContentTwo">
         <h4>Powerful tooling</h4>
-        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-        capable of producing even the most complicated sites.</p>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and
+          deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
       </div>
     </div>
   </section>
@@ -143,7 +156,7 @@
       <h3 class="logo">Blogr</h3>
       <div class="footerOne">
         <h5>Product</h5>
-        <span>  Overview</span>
+        <span> Overview</span>
         <span>Pricing</span>
         <span>Marketplace</span>
         <span>Features</span>
@@ -165,8 +178,9 @@
     </div>
   </footer>
 
-  
+
 
   <script src="./js/main.js"></script>
 </body>
+
 </html>
